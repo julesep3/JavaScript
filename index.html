@@ -9,17 +9,22 @@
 </head>
 <body>
     <script>
-        document.write("Welcome to Javascript 1 everybody.<BR>");
+        // document.write("Welcome to Javascript 1 everybody.<BR>");
         
-        document.write("Name: Julian Shen<BR>" + 32 / 3 + "<BR>" + 21 * 127 + "<BR><BR>");
+        // document.write("Name: Julian Shen<BR>" + (32 / 3) + "<BR>" + (21 * 127) + "<BR><BR>");
         
-        let name = "<h1>Julian Shen</h1>";
-        let age = 32;
-        let DOB = 21;
-
-        document.write("Name: " + name + "<BR>Age: " + age / 3 + "<BR>Date of Birth: " + DOB * 127 + "<BR>");
+        let name = prompt("Enter your name: ");
+        let age = prompt("Enter your age");
+        let DOB = prompt("Enter your day of birth");
 
 
+        if(age > 55) {
+            document.write(name + " is old");
+        } else if (age < 25) {
+            document.write(name + " is young");
+        } else {
+            document.write(name + " is just right");
+        }
     
 
     </script>
