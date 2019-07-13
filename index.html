@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
     <title>OKCoders Javascript</title>
 
 </head>
+
 <body>
     <script>
         // document.write("Welcome to Javascript 1 everybody.<BR>");
-        
+
         // document.write("Name: Julian Shen<BR>" + (32 / 3) + "<BR>" + (21 * 127) + "<BR><BR>");
-        
+
         // let name = prompt("Enter your name: ");
         // let age = prompt("Enter your age");
         // let DOB = prompt("Enter your day of birth");
@@ -30,17 +32,76 @@
         //     document.write(number + " bottles of beer on the wall..." + number + " bottles of beer!<br>Take one down, pass it around, " + number + "bottles of beer on the wall!<br>");
         //     number--;
         // }
-    
-        var row = prompt("Number of Rows?");
-        var col = prompt("Number of Columns?");
-        
-        for(let i = 0; i <= row; i++) {
-            for(let j = 0; j <= col; j++) {
-                document.write("*");
-            }
-            document.write("<br>");
-        }
+        // function print() {
+        //     document.write("*");
+        // }
 
+        // function nextline() {
+        //     document.write("<br>");
+        // }
+
+        // function makeRow() {
+        //     for(let j = 1; j <= col; j++) {
+        //         print();
+        //     }
+        // }
+
+        // function findNumberOfCells() {
+        //     var total = col * row;
+
+        //     if ( total > 100) {
+        //         alert("Too big of a table size");
+        //         return "a bazillion";
+        //     } else {
+        //         return total;
+        //     }
+        // }
+
+        // var row = prompt("Number of Rows?");
+        // var col = prompt("Number of Columns?");
+
+        // for(let i = 1; i <= row; i++) {
+        //     makeRow();
+        //     nextline();
+        // }
+        // document.write("Dimensions are " + row + " rows and " + col + " columns.");
+        // document.write("There are " + findNumberOfCells() + " cells.")
+
+        // function bobsays() {
+        //     alert("blah");
+        // }
+
+        // bobsays();
+
+        // var x = prompt("Enter");
+        // var y = prompt("Enter again");
+
+        // function findLCM(one, two) {
+        //     document.write("Your LCM's are: <br>");
+        //     for(let i = 1; i <= 100; i++) {
+        //         if (( i % one === 0) && ( i % two === 0)) {
+
+        //             document.write(i + "<br>");
+        //         }
+        //     }
+        // }
+        // findLCM(x,y);
+
+        // var age = prompt("How many years ago was your dog born?");
+        // function dogAgeCalc(pupAge) {
+        //     let x = pupAge * 7;
+        //     document.write("Your dog's age in dog years is " + x);
+        // }
+        // dogAgeCalc(age);
+        
+        var word = prompt("What word do you want repeated?");
+        var repeat = prompt("How many times would you like " + word + " repeated?");
+        function repeatWord(text, number) {
+            for(let i = 1; i <= number; i++) {
+                document.write(text + "<br>");
+            }
+        }
+        repeatWord(word, repeat);
 
 
     </script>
