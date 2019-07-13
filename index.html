@@ -17,7 +17,6 @@
         // let age = prompt("Enter your age");
         // let DOB = prompt("Enter your day of birth");
 
-
         // if(age > 55) {
         //     document.write(name + " is old");
         // } else if (age < 25) {
@@ -26,12 +25,23 @@
         //     document.write(name + " is just right");
         // }
 
-        var number = prompt("Count to what?");
-        while(number > 1) {
-            document.write(number + " bottles of beer on the wall..." + number + " bottles of beer!<br>Take one down, pass it around, " + number + "bottles of beer on the wall!<br>");
-            number--;
-        }
+        // var number = prompt("Count to what?");
+        // while(number > 1) {
+        //     document.write(number + " bottles of beer on the wall..." + number + " bottles of beer!<br>Take one down, pass it around, " + number + "bottles of beer on the wall!<br>");
+        //     number--;
+        // }
     
+        var row = prompt("Number of Rows?");
+        var col = prompt("Number of Columns?");
+        
+        for(let i = 0; i <= row; i++) {
+            for(let j = 0; j <= col; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+
 
     </script>
 
