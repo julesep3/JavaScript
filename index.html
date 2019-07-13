@@ -93,15 +93,25 @@
         //     document.write("Your dog's age in dog years is " + x);
         // }
         // dogAgeCalc(age);
-        
-        var word = prompt("What word do you want repeated?");
-        var repeat = prompt("How many times would you like " + word + " repeated?");
-        function repeatWord(text, number) {
-            for(let i = 1; i <= number; i++) {
-                document.write(text + "<br>");
+
+        // var word = prompt("What word do you want repeated?");
+        // var repeat = prompt("How many times would you like " + word + " repeated?");
+        // function repeatWord(text, number) {
+        //     for (let i = 1; i <= number; i++) {
+        //         document.write(text + "<br>");
+        //     }
+        // }
+        // repeatWord(word, repeat);
+
+        var numArray = [55, 85, 3, 79, 88, 97, 1, 0, 456, 45, 984, 564, 1, 65, 7];
+
+        function printNum(array) {
+            for(let i = 0; i < array.length; i++) {
+                document.write(array[i] + "<br>");;
             }
         }
-        repeatWord(word, repeat);
+
+        printNum(numArray);
 
 
     </script>
