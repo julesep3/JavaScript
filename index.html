@@ -10,7 +10,36 @@
 </head>
 
 <body>
+
+    <div id="music">
+        <h1 id="title"></h1>
+        <h3 id="author"></h3>
+    </div>
     <script>
+
+        
+
+        function display(x, y) {
+            let message = x + y;
+            document.getElementById("author").innerText = x;
+            document.getElementById("title").innerText = y;
+        }
+
+        let title = prompt("Name of title?");
+        let author = prompt("Name of author?");
+
+        display(title, author);
+        
+        // let list = [ "one", "two", "three", "four"];
+        // list[4] = "five";
+        // list.pop();
+
+        // for (let i = 0; i < list.length; i++) {
+        //     document.write(list[i]);
+        //     document.write("<br>");
+        // }
+        
+
         // document.write("Welcome to Javascript 1 everybody.<BR>");
 
         // document.write("Name: Julian Shen<BR>" + (32 / 3) + "<BR>" + (21 * 127) + "<BR><BR>");
@@ -103,15 +132,15 @@
         // }
         // repeatWord(word, repeat);
 
-        var numArray = [55, true, 3, 7.79, 88, "stuff", 1, 0, 33.19, 45, 984, 564, 1, 65, 7];
+        // var numArray = [55, true, 3, 7.79, 88, "stuff", 1, 0, 33.19, 45, 984, 564, 1, 65, 7];
 
-        function printNum(array) {
-            for(let i = 0; i < array.length; i++) {
-                document.write(array[i] + "<br>");;
-            }
-        }
+        // function printNum(array) {
+        //     for(let i = 0; i < array.length; i++) {
+        //         document.write(array[i] + "<br>");;
+        //     }
+        // }
 
-        printNum(numArray);
+        // printNum(numArray);
 
 
     </script>
