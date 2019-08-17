@@ -16,4 +16,5 @@ console.log(evenNums);
 const addAll = array.reduce((a, b) => {
     return a + b;
 })
+// example.reduce((p , c) => p + c, 0)
 console.log(addAll);
