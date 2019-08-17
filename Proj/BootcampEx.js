@@ -10,6 +10,7 @@ const evenNums = array.filter(num => {
         return num;
     } 
 })
+// example.map(e => e%2===0)
 console.log(evenNums);
 
 const addAll = array.reduce((a, b) => {
