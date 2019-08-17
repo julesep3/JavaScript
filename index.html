@@ -10,26 +10,70 @@
 </head>
 
 <body>
+    <div id="myList">
 
-    <div id="music">
-        <h1 id="title"></h1>
-        <h3 id="author"></h3>
     </div>
+    <div>
+        <input type="text" id="name" placeholder="author goes here">
+        <input type="text" id="title" placeholder="title goes here">
+        <button onclick="display2()">Set Book Info</button>
+        <button onclick="erase()">Erase Last Book</button>
+    </div>
+
+
     <script>
-
+        //var authors = ["Virginia Wolfe", "Charles Dickens"];
+        // var book1 = {
+        //     author: "J.R.R. Tolkien",
+        //     title: "Lord of the Rings"
+        // }
+        // var book2 = {
+        //     author: "Charles Dickens",
+        //     title: "CD book"
+        // }
+        // var book3 = {
+        //     title: "JS book",
+        //     author: "John Smith"
+            
+        // }
+        // var books = [book1, book2, book3];
+        var books = [
+            {author: "John", title: "Johns Book"},
+            {author: "Peter", title: "Petes Book"},
+            {author: "David", title: "Davids Book"}
+        ];
         
+        printAuthList();
 
-        function display(x, y) {
-            let message = x + y;
-            document.getElementById("author").innerText = x;
-            document.getElementById("title").innerText = y;
+        function display2() {
+            let x = document.getElementById("name").value;
+            let y = document.getElementById("title").value;
+            var newbook = {author: x, title: y}
+            books.push(newbook);
+            printAuthList();
+        }
+        function printAuthList() {
+            let auth = document.getElementById("myList");
+            auth.innerHTML = "";
+            for (let i = 0; i < books.length; i++) {
+                auth.innerHTML += "<h2>" + books[i].title + "</h2>";
+                auth.innerHTML += "<h3>" + books[i].author + "</h3>";
+            }
+        }
+        function erase() {
+            books.pop();
+            printAuthList();
         }
 
-        let title = prompt("Name of title?");
-        let author = prompt("Name of author?");
+        // function display() {
+        //     let x = document.getElementById("name").value;
+        //     document.getElementById("author").innerText = x;
+        // }
+        // let title = prompt("Name of title?");
+        // let author = prompt("Name of author?");
+        // display(title, author);
 
-        display(title, author);
-        
+
         // let list = [ "one", "two", "three", "four"];
         // list[4] = "five";
         // list.pop();
@@ -38,7 +82,7 @@
         //     document.write(list[i]);
         //     document.write("<br>");
         // }
-        
+
 
         // document.write("Welcome to Javascript 1 everybody.<BR>");
 
